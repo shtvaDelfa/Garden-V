@@ -1,0 +1,95 @@
+
+.header {
+    margin-top: 27px;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------Логотип */
+
+.header__logo {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+}
+
+.header__title-block {}
+
+.header__title {
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #343D33;
+
+}
+
+.header__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #333;
+}
+
+/* ------------ */
+
+
+/* Навигация */
+.nav {
+   
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.nav__item {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #414840;
+    list-style: none;
+}
+
+.nav__item:last-child{
+    border: 2px solid #475F45;
+    padding: 13px 28px;
+}
+
+.munu {
+    display: none;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.munu__line {
+    width: 22px;
+    height: 2px;
+    background-color: #343D33;
+    border-radius: 10px;
+}
+
+@media(max-width: 1050px){
+    .nav__list{
+        display: none;
+    }
+    .munu{
+        display: flex;
+    }
+}
+
+@media(max-width: 380px){
+    .header__title{
+        font-size: 19px;
+    }
+    .header__text{
+        font-size: 13px;
+    }
+}
